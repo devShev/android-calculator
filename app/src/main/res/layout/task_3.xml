@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#a0a0a0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        android:gravity="end">
+        <TextView
+            android:id="@+id/operandTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1"
+            android:textSize="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/operationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="÷"
+            android:textSize="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/operatorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="5"
+            android:textSize="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fieldEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:gravity="end"
+        android:padding="10dp"
+        tools:text="0"
+        android:textSize="20dp" />
+
+</LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/task_2"/>
+
+</LinearLayout>
